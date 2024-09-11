@@ -1,0 +1,31 @@
+<div id="fh5co-skills" class="animate-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Skills</h2>
+            </div>
+        </div>
+        <div class="row row-pb-md">
+            <div class="col-sm-7 col-xs-12 text-center tags">
+                <h3>Programming Skills</h3>
+                <div class="tag-wrapper">
+                    <ul>
+                        {% for skill in PSkills %}
+                        <li><a>{{ skill.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-5 col-xs-12 text-center tags">
+                <h3>Tools</h3>
+                <div class="tag-wrapper">
+                    <ul>
+                        {% for skill in TSkills %}
+                        <li><a>{{ skill.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

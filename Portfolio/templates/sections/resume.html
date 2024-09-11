@@ -1,0 +1,51 @@
+<div id="fh5co-resume" class="fh5co-bg-color">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>My Resume</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <ul class="timeline">
+                    <li class="timeline-heading text-center animate-box">
+                        <div><h3>Work Experience</h3></div>
+                    </li>
+                    {% for Experience in Experiences %} 
+                    <li class="animate-box {% if forloop.counter0|divisibleby:2  %} timeline-unverted {% else %} timeline-inverted {% endif %}">
+                        <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="timeline-title">{{ Experience.title }}</h3>
+                                <span class="company">{{ Experience.company_name }} - {{ Experience.from_date }} - {{ Experience.to_date }}</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>{{Experience.description}}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                    <br>
+                    <li class="timeline-heading text-center animate-box">
+                        <div><h3>Education & Certifications</h3></div>
+                    </li>
+                    {% for Certification in Certifications %} 
+
+                    <li class="animate-box {% if forloop.counter0|divisibleby:2  %} timeline-unverted {% else %} timeline-inverted {% endif %}">
+                        <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="timeline-title">{{ Certification.title }}</h3>
+                                <span class="company">{{ Certification.organization }} - {{ Certification.from_date }} - {{ Certification.to_date }}</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>{{ Certification.description }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

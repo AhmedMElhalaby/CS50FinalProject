@@ -1,0 +1,23 @@
+<div id="fh5co-about" class="animate-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="info">
+                    <li><span class="first-block">Name:</span><span class="second-block">{{ About.name }}</span></li>
+                    <li><span class="first-block">Phone:</span><span class="second-block"><a href="{{ About.whatsapp }}">{{ About.phone }}</a></span></li>
+                    <li><span class="first-block">Email:</span><span class="second-block"><a href="mailto:{{ About.email }}">{{ About.email }}</a></span></li>
+                    <li><span class="first-block">Website:</span><span class="second-block"><a href="{{ About.website }}">{{ About.website|cut:"https://" }}</a></span></li>
+                    <li><span class="first-block">Address:</span><span class="second-block">{{ About.address }}</span></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <p>{{ About.description |safe }}</p>
+            </div>
+        </div>
+    </div>
+</div>
