@@ -1,3 +1,3 @@
 # Portfolio Website
-#### Video Demo:  <URL HERE>
-#### Description:
+#### Video Demo:  https://youtu.be/3rQrektTSbs
+#### Description: This project is a Django-based portfolio website designed to showcase professional experiences, certifications, skills, projects, and articles. The website features a user-friendly dashboard that allows seamless management and updates of all content. Users can efficiently add, edit, or remove entries for each category, ensuring that the portfolio remains up-to-date. The project demonstrates proficiency in web development using Django, including dynamic data management, and serves as a personal hub for professional accomplishments.

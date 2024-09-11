@@ -10,7 +10,6 @@ from .models import (
     Responsibility,
     Skill,
 )
-from django.db.models import Prefetch
 
 
 # Create your views here.
